@@ -52,6 +52,7 @@ I was getting this error:
     Aug 15 14:07:24 kiki kernel: bluetooth hci0: firmware: brcm/BCM20702A0-0a5c-216f.hcd will not be loaded
     Aug 15 14:07:24 kiki kernel: Bluetooth: hci0: BCM: patch brcm/BCM20702A0-0a5c-216f.hcd not found
 
+Download http://catalog.update.microsoft.com/v7/site/ScopedViewRedirect.aspx?updateid=87a7756f-1451-45da-ba8a-55f8aa29dfee
 
 Compile `hex2hcd` from https://github.com/jessesung/hex2hcd and then do this:
 
