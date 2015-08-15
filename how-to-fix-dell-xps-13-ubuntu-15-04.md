@@ -55,10 +55,16 @@ I was getting this error:
 
 Compile `hex2hcd` from https://github.com/jessesung/hex2hcd and then do this:
 
-      $ cabextract 20662520_6c535fbfa9dca0d07ab069e8918896086e2af0a7.cab
-      $ hex2hcd BCM20702A1_001.002.014.1443.1572.hex
-      $ sudo mv BCM20702A1_001.002.014.1443.1572.hcd /lib/firmware/brcm/BCM20702A1-0a5c-216f.hcd
-      $ sudo ln -rs /lib/firmware/brcm/BCM20702A1-0a5c-216f.hcd /lib/firmware/brcm/BCM20702A0-0a5c-216f.hcd
+      cabextract 20662520_6c535fbfa9dca0d07ab069e8918896086e2af0a7.cab
+      hex2hcd BCM20702A1_001.002.014.1443.1572.hex
+      sudo mv BCM20702A1_001.002.014.1443.1572.hcd /lib/firmware/brcm/BCM20702A1-0a5c-216f.hcd
+      sudo ln -rs /lib/firmware/brcm/BCM20702A1-0a5c-216f.hcd /lib/firmware/brcm/BCM20702A0-0a5c-216f.hcd
 
 
 Source: https://wiki.archlinux.org/index.php/Dell_XPS_13_%282015%29#Bluetooth
+
+# Install TLP
+
+    sudo add-apt-repository ppa:linrunner/tlp
+    sudo apt-get update 
+    sudo apt-get install tlp tlp-rdw 
