@@ -1,5 +1,7 @@
 # How to fix Dell XPS 13 (2015) for Ubuntu 15.04
 
+[High DPI](https://wiki.archlinux.org/index.php/HiDPI)
+
 # Suspend error
 
 Download https://launchpadlibrarian.net/207055396/lp1415880.debdiff
