@@ -12,11 +12,12 @@
 
 # Decompiling from LLVM-IR into other languages
 
-* http://www.sersc.org/journals/IJSIA/vol5_no4_2011/8.pdf
-* https://github.com/draperlaboratory/llvm-cbe
-* http://stackoverflow.com/questions/8563670/
-* http://stackoverflow.com/questions/5180914/
-* http://lists.cs.uiuc.edu/pipermail/llvmdev/2011-October/043719.html
+* [Design of a Retargetable Decompiler for a Static Platform-Independent Malware Analysis](http://www.sersc.org/journals/IJSIA/vol5_no4_2011/8.pdf)
+* [LLVM-C backend](https://github.com/draperlaboratory/llvm-cbe) aka LLVM-IR to C
+* [How to convert llvm IR to c code?](http://stackoverflow.com/questions/8563670/)
+* [llvm ir back to human-readable source language?](http://stackoverflow.com/questions/5180914/)
+* [Re-generating source code from LLVM parse tree?](http://stackoverflow.com/questions/23296823/)
+* [LLVM IR is a poor system for building a Platform](http://lists.cs.uiuc.edu/pipermail/llvmdev/2011-October/043719.html)
 
 # See also
 
