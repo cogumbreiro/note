@@ -12,9 +12,9 @@
 
 # Decompiling from LLVM-IR into other languages
 
-In general it is not possible, as translation is **lossy**, so the IR does not include enough information to reconstruct the original code.
+**Can we revert the translation from LLVM-IR into the source language?** In general, **no** because the *translation is lossy*, so the IR does not include enough information to reconstruct the original code.
 
-Additionally, there are hardly any compilers from IR to other languages. The two most well known ones are: [llvm-cbe](https://github.com/draperlaboratory/llvm-cbe), and [emscripten](https://github.com/kripken/emscripten).
+Additionally, there are hardly any compilers from IR into other languages. The two most well known reverse-compilers are: [llvm-cbe](https://github.com/draperlaboratory/llvm-cbe), and [emscripten](https://github.com/kripken/emscripten). Note, however, that both of these projects do not aim to *reconstruct* code, and are instead simple compiler.
 
 References:
 
