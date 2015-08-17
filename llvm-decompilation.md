@@ -12,6 +12,12 @@
 
 # Decompiling from LLVM-IR into other languages
 
+In general it is not possible, as translation is **lossy**, so the IR does not include enough information to reconstruct the original code.
+
+Additionally, there are hardly any compilers from IR to other languages. The two most well known ones are: [llvm-cbe](https://github.com/draperlaboratory/llvm-cbe), and [emscripten](https://github.com/kripken/emscripten).
+
+References:
+
 * [Design of a Retargetable Decompiler for a Static Platform-Independent Malware Analysis](http://www.sersc.org/journals/IJSIA/vol5_no4_2011/8.pdf)
 * [LLVM-C backend](https://github.com/draperlaboratory/llvm-cbe) aka LLVM-IR to C
 * [How to convert llvm IR to c code?](http://stackoverflow.com/questions/8563670/)
