@@ -25,6 +25,18 @@ References:
 * [Re-generating source code from LLVM parse tree?](http://stackoverflow.com/questions/23296823/)
 * [LLVM IR is a poor system for building a Platform](http://lists.cs.uiuc.edu/pipermail/llvmdev/2011-October/043719.html)
 
+>  Apple has some LLVM IR transformations for Objective-C, however
+> the transformations have to reverse-engineer the high-level semantics
+> out of the lowered code, which is awkward. Further, they're
+> reasoning about high-level semantics in a way that isn't guaranteed
+> to be safe by LLVM IR rules alone. It works for the kinds of code
+> clang generates for Objective C, but it wouldn't necessarily be
+> correct if run on code produced by other front-ends. LLVM IR
+> isn't capable of representing the necessary semantics for this
+> unless we start embedding Objective C into it.
+
+Source: [LLVM IR is a poor system for building a Platform](http://lists.cs.uiuc.edu/pipermail/llvmdev/2011-October/043719.html)
+
 # See also
 
 * http://www.phatcode.net/res/228/files/decompilation_thesis.pdf
